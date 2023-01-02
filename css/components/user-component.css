@@ -1,0 +1,51 @@
+.user-component {
+  justify-content: space-between;
+}
+.user-component,
+.user-component__column:first-child {
+  display: flex;
+  align-items: center;
+}
+.user-component__column span {
+  color: rgba(0, 0, 0, 0.6);
+}
+.user-component__avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.user-component__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 12px;
+}
+.user-component__subtitle {
+  margin-top: 8px;
+  font-size: 15px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.user-component__avatar--xl {
+  width: 70px;
+  height: 70px;
+  border-radius: 30px;
+}
+.user-component__title--xl {
+  font-size: 22px;
+}
+.user-component__avatar--sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 22px;
+}
+.user-component__title--not-bold {
+  font-size: 18px;
+  font-weight: 400;
+}
+.user-component__profile-music {
+  border: 2px solid var(--profile-music-border);
+  padding: 6px;
+  border-radius: 15px;
+}
+.user-component__profile-music span {
+  color: black;
+}
