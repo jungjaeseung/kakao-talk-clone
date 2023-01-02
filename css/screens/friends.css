@@ -13,10 +13,6 @@
 #friends-display-link i:last-child {
   color: rgba(0, 0, 0, 0.4);
 }
-
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-}
 .friends-screen__header_box {
   margin-top: 15px;
   border-top: 1px solid rgba(0, 0, 0, 0.2);

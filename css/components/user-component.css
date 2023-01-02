@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
 }
-.user-component__column span {
+.user-component__more-channel {
   color: rgba(0, 0, 0, 0.6);
 }
 .user-component__avatar {
@@ -15,12 +15,13 @@
   border-radius: 25px;
 }
 .user-component__title {
-  font-size: 20px;
+  font-size: 19px;
   font-weight: 600;
   margin-left: 12px;
 }
 .user-component__subtitle {
   margin-top: 8px;
+  margin-left: 12px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -30,7 +31,7 @@
   border-radius: 30px;
 }
 .user-component__title--xl {
-  font-size: 22px;
+  font-size: 21px;
 }
 .user-component__avatar--sm {
   width: 50px;
@@ -38,7 +39,7 @@
   border-radius: 22px;
 }
 .user-component__title--not-bold {
-  font-size: 18px;
+  font-size: 17px;
   font-weight: 400;
 }
 .user-component__profile-music {
@@ -48,4 +49,13 @@
 }
 .user-component__profile-music span {
   color: black;
+}
+.user-component__chat-time {
+  font-size: 14px;
+}
+.user-component__on-chats {
+  margin-top: 12px;
+}
+.user-component__on-chats:first-child {
+  margin-top: -5px;
 }

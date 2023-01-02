@@ -26,82 +26,44 @@
       <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+        <span><i class="fa-solid fa-comment-medical fa-lg"></i></span>
         <span><i class="fa-solid fa-music fa-lg"></i></span>
         <span><i class="fa-solid fa-gear fa-lg"></i></span>
       </div>
     </header>
-    <a id="friends-display-link" href="#">
-      <i class="fa-solid fa-circle-info"></i>
-      Friends' Names Display
-      <i class="fa-solid fa-chevron-right fa-2xs"></i>
-    </a>
-    <main class="friends-screen">
-      <div class="user-component">
+    <main class="main-screen">
+      <div class="user-component user-component__on-chats">
         <div class="user-component__column">
           <img
             src="https://avatars.githubusercontent.com/u/35757925"
-            class="user-component__avatar user-component__avatar--xl"
+            class="user-component__avatar"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title user-component__title--xl">
-              Jungjaeseung
-            </h4>
-            <!-- <h6 class="user-component__subtitle">Hello World!</h6> -->
+            <h4 class="user-component__title">Jungjaeseung</h4>
+            <h6 class="user-component__subtitle">
+              Hello World! Kakao talk Clone!
+            </h6>
           </div>
         </div>
         <div class="user-component__column">
-          <div class="user-component__column">
-            <div class="user-component__profile-music">
-              <span>이게 아닌데 - 존박 ▶</span>
-            </div>
-          </div>
+          <span class="user-component__chat-time">20:23</span>
+          <span class="badge">1</span>
         </div>
       </div>
-      <div class="friends-screen__header_box">
-        <div class="friends-screen__header">
-          <span>Channel</span>
-          <i class="fa-solid fa-chevron-up fa-2xs"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="img/channel_avatar.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <span>2</span>
-            <i class="fa-solid fa-chevron-right fa-2xs"></i>
+      <div class="user-component user-component__on-chats">
+        <div class="user-component__column">
+          <img
+            src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/daeab1cb-493d-4fb4-a369-0ac5df093b53/20221028_133923.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T073409Z&X-Amz-Expires=86400&X-Amz-Signature=d4c53d07f3a97e4b95168d60ae638ac5234c53a3d600cec83117486624ea4368&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%2220221028_133923.jpg%22&x-id=GetObject"
+            class="user-component__avatar"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Parkhyunsun</h4>
+            <h6 class="user-component__subtitle">I love you!</h6>
           </div>
         </div>
-      </div>
-      <div class="friends-screen__header_box">
-        <div class="friends-screen__header">
-          <span>Friends</span>
-          <i class="fa-solid fa-chevron-up fa-2xs"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/daeab1cb-493d-4fb4-a369-0ac5df093b53/20221028_133923.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T073409Z&X-Amz-Expires=86400&X-Amz-Signature=d4c53d07f3a97e4b95168d60ae638ac5234c53a3d600cec83117486624ea4368&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%2220221028_133923.jpg%22&x-id=GetObject"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Parkhyunsun
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div class="user-component__profile-music">
-              <span>언제라도 어디에서라도 - 정승환 ▶</span>
-            </div>
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__chat-time">05:17</span>
+          <span class="badge">7</span>
         </div>
       </div>
     </main>
@@ -115,7 +77,7 @@
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
-            <span class="nav__notification">1</span>
+            <span class="nav__notification badge">8</span>
             <i class="fa-solid fa-comment fa-lg"></i>
           </a>
         </li>
@@ -128,12 +90,9 @@
           </a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="settings.html">
+          <a class="nav__link" href="more.html">
             <div class="nav__changed"></div>
-            <img
-              src="img/ellipsis-solid-dotted.png"
-              class="settings-icon__image"
-            />
+            <img src="img/ellipsis-solid-dotted.png" class="more-icon__image" />
           </a>
         </li>
       </ul>
