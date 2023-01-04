@@ -1,0 +1,41 @@
+.more-usable-icons,
+.more-suggestion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.more-usable-icons {
+  margin-top: 40px;
+}
+.more-suggestion {
+  margin-top: 20px;
+}
+.more-usable-icons:nth-child(3) {
+  margin-bottom: 40px;
+}
+.more-suggestion__section,
+.more-usable-icons__section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  position: relative;
+}
+.more-usable-icons__section i {
+  padding-bottom: 20px;
+}
+.more-suggestion__section img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+.more-suggestion__section span {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.8);
+}
+.more-usable-icons__changed {
+  position: absolute;
+  right: 30px;
+  bottom: 70px;
+}

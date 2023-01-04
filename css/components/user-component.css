@@ -25,6 +25,11 @@
   font-size: 15px;
   color: rgba(0, 0, 0, 0.6);
 }
+.user-component__subtitle i {
+  margin-left: 6px;
+  font-size: 15px;
+  color: tomato;
+}
 .user-component__avatar--xl {
   width: 70px;
   height: 70px;
