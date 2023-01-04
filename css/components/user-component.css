@@ -48,7 +48,7 @@
   font-weight: 400;
 }
 .user-component__profile-music {
-  border: 2px solid var(--profile-music-border);
+  border: var(--profile-music-border);
   padding: 6px;
   border-radius: 15px;
 }
