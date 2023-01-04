@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Chatting - Kakao Clone</title>
+    <title>Chatting(Jungjaeseung) - Kakao Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>서비스 없음</span>
@@ -34,40 +34,62 @@
       </div>
       <div class="alt-header__column">
         <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+        <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        <span>Sunday, December 25, 2022</span>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/daeab1cb-493d-4fb4-a369-0ac5df093b53/20221028_133923.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T073409Z&X-Amz-Expires=86400&X-Amz-Signature=d4c53d07f3a97e4b95168d60ae638ac5234c53a3d600cec83117486624ea4368&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%2220221028_133923.jpg%22&x-id=GetObject"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Parkhyunsun</span>
+          <div class="message__info">
+            <span class="message__bubble"> Hi! </span>
+            <span class="message__time">00:12</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"> Hi :) </span>
+            <span class="message__time">02:40</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row">
+        <img
+          src="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/daeab1cb-493d-4fb4-a369-0ac5df093b53/20221028_133923.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230102%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230102T073409Z&X-Amz-Expires=86400&X-Amz-Signature=d4c53d07f3a97e4b95168d60ae638ac5234c53a3d600cec83117486624ea4368&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%2220221028_133923.jpg%22&x-id=GetObject"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Parkhyunsun</span>
+          <div class="message__info">
+            <span class="message__bubble"> I love you! </span>
+            <span class="message__time">00:12</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+      </div>
+      <div class="reply__column">
+        <i class="fa-regular fa-face-smile fa-2x"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fa-regular fa-user fa-lg"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">8</span>
-            <i class="fa-regular fa-comment fa-lg"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <img
-              src="img/magnifying-glass-solid-thin.png"
-              class="find-icon__image"
-            />
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <div class="badge-small nav__changed"></div>
-            <img src="img/ellipsis-solid.png" class="more-icon__image" />
-          </a>
-        </li>
-      </ul>
-    </nav>
     <script src="js/status-bar__clock.js"></script>
     <!-- import font awesome script -->
     <script

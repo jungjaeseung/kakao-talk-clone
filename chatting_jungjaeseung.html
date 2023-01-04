@@ -7,7 +7,7 @@
     <title>Chatting(Jungjaeseung) - Kakao Clone</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>서비스 없음</span>
@@ -34,10 +34,47 @@
       </div>
       <div class="alt-header__column">
         <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+        <a href="#"><i class="fa-solid fa-bars fa-lg"></i></a>
       </div>
     </header>
 
-    <main class="main-screen"></main>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        <span>Sunday, December 25, 2022</span>
+      </div>
+      <div class="message-row">
+        <img src="https://avatars.githubusercontent.com/u/35757925" />
+        <div class="message-row__content">
+          <span class="message__author">Jungjaeseung</span>
+          <div class="message__info">
+            <span class="message__bubble"> Hello World! </span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble"> Cloning Kakao Talk!! </span>
+            <span class="message__time">22:22</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus fa-2x"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+      </div>
+      <div class="reply__column">
+        <i class="fa-regular fa-face-smile fa-2x"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up fa-lg"></i>
+        </button>
+      </div>
+    </form>
 
     <script src="js/status-bar__clock.js"></script>
     <!-- import font awesome script -->

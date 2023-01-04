@@ -1,16 +1,29 @@
 .alt-header {
+  position: fixed;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  width: 100%;
   padding: 40px var(--horizontal-space) 20px var(--horizontal-space);
 }
 .alt-header__title {
   font-size: 20px;
   font-weight: 600;
 }
-.alt-header__column:first-child {
-  margin-right: auto;
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
 }
 .alt-header__column:last-child {
-  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.alt-header__column:last-child a:last-child {
+  margin-left: 20px;
 }

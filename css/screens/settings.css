@@ -1,3 +1,6 @@
+.main-settings {
+  padding-top: 60px;
+}
 .settings-list {
   display: flex;
   flex-direction: column;

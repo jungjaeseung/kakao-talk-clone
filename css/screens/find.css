@@ -1,3 +1,6 @@
+#find-body {
+  height: 112vh;
+}
 .find-icons {
   display: flex;
   justify-content: space-between;
