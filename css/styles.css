@@ -17,6 +17,7 @@
 @import "screens/find.css";
 body {
   font-family: "Open Sans", sans-serif;
+  height: 110vh;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
