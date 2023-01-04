@@ -94,3 +94,23 @@
   color: white;
   font-size: 14px;
 }
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.3);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+
+.find__open-post__chat-like-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1.3s linear infinite;
+}
