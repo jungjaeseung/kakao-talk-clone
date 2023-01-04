@@ -8,7 +8,7 @@
   font-size: 26px;
   font-weight: 600;
 }
-.screen-header__icons span {
+.screen-header__icons a {
   margin-left: 22px;
 }
 .screen-header__icons {

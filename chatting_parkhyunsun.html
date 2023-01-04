@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatting - Kakao Clone</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>서비스 없음</span>
+        <i class="fa-solid fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span id="clock">18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>24%</span>
+        <i class="fa-solid fa-battery-quarter fa-lg"></i>
+        <i class="fa-solid fa-bolt-lightning"></i>
+      </div>
+    </div>
+
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <i class="fa-solid fa-chevron-left fa-lg"></i>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Parkhyunsun</h1>
+      </div>
+      <div class="alt-header__column">
+        <a href="#"><i class="fa-solid fa-magnifying-glass fa-lg"></i></a>
+      </div>
+    </header>
+
+    <main class="main-screen"></main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html">
+            <i class="fa-regular fa-user fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">8</span>
+            <i class="fa-regular fa-comment fa-lg"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <img
+              src="img/magnifying-glass-solid-thin.png"
+              class="find-icon__image"
+            />
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="badge-small nav__changed"></div>
+            <img src="img/ellipsis-solid.png" class="more-icon__image" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <script src="js/status-bar__clock.js"></script>
+    <!-- import font awesome script -->
+    <script
+      src="https://kit.fontawesome.com/4fc954bc54.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
