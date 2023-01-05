@@ -18,11 +18,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100px;
+  width: 80px;
   position: relative;
+  justify-content: center;
 }
 .more-usable-icons__section i {
   padding-bottom: 20px;
+}
+.more-suggestion__section div {
+  text-align: center;
 }
 .more-suggestion__section img {
   width: 60px;

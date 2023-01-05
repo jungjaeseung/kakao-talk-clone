@@ -1,6 +1,13 @@
 #settings-body {
   height: 105vh;
 }
+#settings-body .status-bar {
+  z-index: 2;
+}
+#settings-body .alt-header {
+  background-color: white;
+  z-index: 1;
+}
 .main-settings {
   padding-top: 60px;
 }

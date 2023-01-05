@@ -4,6 +4,7 @@
 }
 #chat-screen .status-bar {
   z-index: 2;
+  background-color: var(--chatting-background-color);
 }
 #chat-screen .alt-header {
   background-color: var(--chatting-background-color);
